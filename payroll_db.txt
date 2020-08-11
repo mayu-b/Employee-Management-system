@@ -1,0 +1,6 @@
+create database payroll;
+use payroll;
+create table signup(empid int primary key auto_increment,name varchar(100),gender varchar(10),dob varchar(20),address varchar(100),mno varchar(10),email varchar(20) primary key,password varchar(20));
+
+create table if not exists Employee(Id int,Name varchar(40),Gender varchar(10),DOB varchar(20),Address varchar(100),MobileNo varchar(11),EmailId varchar(50),Password varchar(15),Department varchar(15),Designation varchar(15),Basicsalary float,primary key(EmailId));
+insert into employee values(1000,"Admin","Male","","","","admin@gmail.com","1234","","",20000);
